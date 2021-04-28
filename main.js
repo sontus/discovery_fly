@@ -41,8 +41,8 @@ function getTicketQty(ticketType){
 // Submit
 function submitNow()
 {
-  
-      alert('Thanks for Booking.);
-    
+
+      alert('Thanks for Booking.');
+
 
 }
