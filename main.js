@@ -42,7 +42,7 @@ function getTicketQty(ticketType){
 function submitNow()
 {
   
-      alert('Thanks for Booking. You Have to Pay ' + totalAmount);
+      alert('Thanks for Booking.);
     
 
 }
