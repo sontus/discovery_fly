@@ -41,13 +41,8 @@ function getTicketQty(ticketType){
 // Submit
 function submitNow()
 {
-    const totalAmount = document.getElementById('grand_total').innerText;
-    if(totalAmount < 0)
-    {
+  
       alert('Thanks for Booking. You Have to Pay ' + totalAmount);
-    }
-    else {
-      alert('Please Buy Any Ticket .Than Click Book Now');
-    }
+    
 
 }
