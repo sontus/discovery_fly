@@ -51,20 +51,22 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input class="inp-style inp-width" id="first_class_qty" min="0" value="0" type="number" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <p>+ -</p>
+                    <button type="button" name="button" onclick="increaseHandler('first',true);" class="plus-btn">+</button>
+                    <button type="button" name="button" onclick="increaseHandler('first',false);" class="minus-btn">-</button>
                 </div>
             </div>
 
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input class="inp-style inp-width" id="economy_class_qty" min="0" value="0" type="number" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span>+</span> <span>-</span> </p>
+                  <button type="button" name="button" onclick="increaseHandler('economy',true);" id="economy_class_increase" class="plus-btn">+</button>
+                  <button type="button" name="button" onclick="increaseHandler('economy',false);" class="minus-btn">-</button>
                 </div>
             </div>
             <div class="calculations">
@@ -73,7 +75,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$500</p>
+                        <p id="sub_total">$0</p>
                     </div>
                 </div>
 
@@ -82,7 +84,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p id="vat">$0</p>
                     </div>
                 </div>
                 <hr>
@@ -91,11 +93,11 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <p id="grand_total">$0</p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style" onclick="submitNow()">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -104,7 +106,7 @@
         </div>
     </section>
 
-    <!--Thank You-->
+    <!-- Main js -->
+    <script type="text/javascript" src="main.js"></script>
 </body>
-
 </html>
